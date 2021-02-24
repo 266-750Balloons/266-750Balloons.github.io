@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>266-750 Balloons</title>
+    <link id="winVer" rel="stylesheet" href="https://unpkg.com/7.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: auto;
+        }
+
+        #mainWin {
+            display: block;
+            height: 95%;
+            overflow: auto;
+            padding: 0px;
+        }
+
+        #container {
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            position: relative;
+            margin-left: 1em;
+            display: block;
+            white-space: normal;
+        }
+
+        #cmd {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        #spanInq {
+            width: 15rem;
+            margin-top: 10px;
+        }
+    </style>
+
+    <style>
+        /*Copyright 2020 Adam Hammad, Jordan Scales*/
+        @font-face {
+            font-family: Perfect DOS VGA\ 437 Win;
+            src: url(https://unpkg.com/xp.css@0.2.4/dist/PerfectDOSVGA437Win.woff2) format("woff2"), url(https://unpkg.com/xp.css@0.2.4/dist/PerfectDOSVGA437Win.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        pre {
+            display: block;
+            padding: 12px 8px;
+            background-color: #000;
+            color: silver;
+            font-size: 1rem;
+            margin: 0;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        pre,
+        pre * {
+            font-family: Perfect DOS VGA\ 437 Win;
+        }
+
+        .window-body pre {
+            margin: -8px;
+            overflow: auto;
+        }
+
+        .tab {
+            white-space: pre;
+        }
+    </style>
+    <!-- The second stylesheet is bits from XP.CSS to allow command prompt styling https://botoxparty.github.io/XP.css/-->
+
+
+</head>
+
+<body>
+    <div id="container" class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">266-750 Balloons</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div id="mainWin" class="window-body">
+            <div id="main">
+                <div style="color:#0033BC; font-size: 18pt;">Welcome to 266-750 Balloons!</div>
+                <div style="color: #555; font-size: 14pt;">Where we favor eccentric amounts of balloons.</div>
+                <div class="window" id="cmd">
+                    <div class="title-bar">
+                        <div class="title-bar-text">Command Prompt</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <pre>Microsoft Windows [Version 6.1.7601]<br><br><br>
+                            C:/Users/Username/Documents>echo aboutme.txt<br>
+                            <br>
+                            About Username<br><br>
+                            My programming language started with Scratch, and then it grw into learning Javascript, then HTML and CSS through Khan Academy. I have kept practicing and been growing since then, and so has my love, obsession, and mourning for Windows 7 (I upgraded for free 3 days after it proudly crossed the rainbow bridge to be with XP and mock Vista).<br>
+                            Outside of the Microsoft world, I'm a fan of Linux, admiring it/hosting apache2 servers for testing pages on my phone/building nano for fun in Virtualbox and WSL.<br>
+                            In my spare time, I program (obviously), read, do family history at familysearch.org, and study the Book of Mormon.
+                </pre>
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="title-bar">
+                        <div class="title-bar-text">Projects</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <ul>
+                            <li>A simple web app to convert ASCII art to shell commands.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="window">
+                    <div class="title-bar">
+                        <div class="title-bar-text">Credits</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <ul>
+                            <li>khang-nd: <a href="https://khang-nd.github.io/7.css/">7.css</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/khang-nd/7.css/blob/main/LICENSE">See MIT License</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Adam Hammad, Jordan Scales: <a href="https://botoxparty.github.io/XP.css/">XP.css</a>
+                                <ul>
+                                    <li><a href="https://github.com/botoxparty/XP.css/blob/main/LICENSE">See MIT License</a></li>
+                                </ul>
+                            </li>
+                            <li>jdan: <a href="https://jdan.github.io/98.css/">98.css</a>
+                                <ul>
+                                    <li><a href="https://github.com/jdan/98.css/blob/main/LICENSE">See MIT License</a></li>
+                                </ul>
+                            </li>
+                            <li>Monty Python: For Reasons</li>
+                        </ul>
+                    </div>
+                </div>
+                <span id="spanishRef" style="display: none;"><img id="spanInq"
+                        src="https://i.kym-cdn.com/entries/icons/facebook/000/008/567/DFHg6ZsVoAAo7Av.jpg"><br>
+                    <button id="nobodyExpects">I didn't expect the spanish inquisition.</button></span>
+            </div>
+        </div>
+        <script>
+            //Credit to Monty Python for a reference hidden on here.
+
+            //Variable referring to the Windows CSS stylesheet.
+            var winVer = document.getElementById("winVer");
+
+            //When the page loads, I have a set of timeouts to change the href of the Windows stylesheet for a little glitch effect from 7 to 98 to XP and back to 7.
+            window.setTimeout(function () {
+                winVer.href = "https://unpkg.com/98.css";
+            }, 500);
+            window.setTimeout(function () {
+                winVer.href = "https://unpkg.com/xp.css";
+            }, 600);
+            window.setTimeout(function () {
+                winVer.href = "https://unpkg.com/7.css";
+                //A little talk about a secret.
+                console.log("I\'ve got a funny little secret hidden on here. I\'ll give you a hint: the surname of a British comedian and the name of a popular programming language. Good luck!");
+            }, 700);
+
+            //Totally not related to the secret
+            var nobodyExpects = document.getElementById("nobodyExpects");
+            var spanInq = document.getElementById("spanInq");
+            var spanishRef = document.getElementById("spanishRef");
+
+            //No! This was supposed to be a riddle! Not a source-code search! Guess I can't stop you, though. My code needs to watch "How to not be seen."
+            var python = function () {
+                spanishRef.style.display = "block";
+            };
+
+            //Event Listener for the secret.
+            nobodyExpects.addEventListener("click", function () {
+                console.log("Nobody Expects the Spanish Inquisition!");
+                spanInq.src = "https://i.imgflip.com/3gn5us.jpg";
+            });
+        </script>
+</body>
+
+</html>
