@@ -1,5 +1,6 @@
 # 266-750Balloons.github.io
 Repository for my [Github Page](https://266-750balloons.github.io/).
+Constructive criticism is welcome. I want to grow. There is so much I don't know about js.
 
 ## Credits
 * khang-nd: [7.css](https://khang-nd.github.io/7.css/)
